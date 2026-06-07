@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Partido</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Jornada 19 ACB</h1>
+  </header>
+
+  <main>
+
+    <section aria-live="polite" id="estado-partido">
+      <h2>Estado del partido</h2>
+      <p id="mensaje">El partido no ha comenzado</p>
+    </section>
+
+    <section>
+      <h2>Marcador</h2>
+
+      <div class="equipo">
+        <h3>Unicaja Malaga</h3>
+        <p id="puntosA">0</p>
+        <button type="button" id="btnA">+1 punto</button>
+        <button type="button" id="btnA2">+2 puntos</button>
+        <button type="button" id="btnA3">+3 puntos</button>
+        <button type="button" id="btnAminus">-1 punto</button>
+      </div>
+
+      <div class="equipo">
+        <h3>UCAM Murcia</h3>
+        <p id="puntosB">0</p>
+        <button type="button" id="btnB">+1 punto</button>
+        <button type="button" id="btnB2">+2 puntos</button>
+        <button type="button" id="btnB3">+3 puntos</button>
+        <button type="button" id="btnBminus">-1 punto</button>
+      </div>
+
+      <button type="button" id="reiniciar">Reiniciar marcador</button>
+    </section>
+
+    <section>
+      <h2>Jugadores</h2>
+
+      <form id="formJugador">
+        <label for="nombreJugador">Nombre del jugador</label>
+        <input type="text" id="nombreJugador">
+        <button type="submit">Añadir jugador</button>
+      </form>
+
+      <ul id="listaJugadores"></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Unicaja Malaga</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
