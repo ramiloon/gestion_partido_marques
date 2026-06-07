@@ -1,0 +1,220 @@
+body {
+  font-family: "sans-serif", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f9e8; 
+  color: #123;
+}
+
+header, footer {
+  background-color: #00796b; 
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  
+  background: transparent;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.equipo {
+  margin-bottom: 1rem;
+}
+
+.equipo h3 {
+  color: #00796b;
+  margin: 0 0 0.5rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #00564a;
+}
+
+#mensaje {
+  padding: 0.45rem 0.6rem;
+  border-radius: 0;
+  background: transparent;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0;
+  background: transparent;
+  transition: background-color 0.12s ease;
+  border-radius: 4px;
+}
+
+li:hover {
+  background-color: rgba(0,0,0,0.02);
+}
+
+li button {
+  background-color: #e53935; 
+  color: white;
+  border: none;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.15s ease;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+}
+li button:hover {
+  background-color: #b71c1c;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.puntos {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #014f46;
+}
+
+
+.controls, .form-inline {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="search"],
+select {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #cfd8d9;
+  border-radius: 6px;
+  background: #fff;
+  outline: none;
+  transition: box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+select:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 0 4px rgba(0,121,107,0.10);
+}
+
+
+button.btn-primary {
+  background-color: #1976d2;
+}
+
+button.btn-primary:hover { background-color: #125ea8; }
+
+button.btn-danger {
+  background-color: #d32f2f;
+}
+
+button.btn-danger:hover { background-color: #9a1f1f; }
+
+
+.equipo-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.lista-jugadores {
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+
+
+li {
+  background: transparent;
+  transition: background-color 0.12s ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+li:hover {
+  background-color: rgba(0,0,0,0.02);
+}
+
+li button {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+}
+
+
+#mensaje {
+  padding: 0.45rem 0.6rem;
+  border-radius: 0;
+  background: transparent;
+  display: inline-block;
+}
+
+
+.hidden { display: none !important; }
+.center { text-align: center; }
+
+
+@media (max-width: 600px) {
+  .scoreboard {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  .puntos {
+    font-size: 1.3rem;
+  }
+  .controls, .form-inline {
+    width: 100%;
+  }
+}
